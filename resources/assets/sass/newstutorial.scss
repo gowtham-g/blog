@@ -1,0 +1,43 @@
+.news-tag{
+	.news-tag-list{
+		@extend .tags-search;
+		padding: 14px 0px;
+	}
+}
+
+.news-tag-Sec{
+		list-style-type: none;
+		-webkit-padding-start: 0px;
+		@include tag-sec();
+		width: auto;
+		li{
+			display: inline-block;
+			
+			.main-tag{
+				background: $bg-tag;
+				float: left;
+				margin-bottom: 5px;
+				font-size: 14px;
+				color: $tag-but-color;
+				border: none;
+				border-radius: 25px;
+				margin-right: 5px;
+				position: relative;
+			    transition: all .15s ease-in-out;
+			}
+		}
+
+}
+.news-tutorial-articles{
+	padding-top: 10px;
+	.questions-hover{
+		display: block;
+		.tag-but{
+			margin-bottom: 10px;
+		}
+	}
+}
+.main-bg{
+	background: #f7f8fa !important;
+	padding-bottom: 30px;
+}

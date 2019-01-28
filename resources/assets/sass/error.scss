@@ -1,0 +1,35 @@
+.main{
+  height: calc(100vh - 16px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.error-page{
+  .navbar, #footer{
+    display: none;
+  }
+.pgNtFnd{
+  font-weight: 400;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 22px;
+}
+.return {
+  color: #000;
+  font-size: 15px!important;
+}
+.errorContainer {
+  margin-top: 30px;
+  p {
+    font-size: 20px;
+  }
+}
+}
+@media (max-width: 767px){
+  .page-error-img {
+    width: 90%;
+    height: 230px;
+    margin: 0 auto;
+  }
+}

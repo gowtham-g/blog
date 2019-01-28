@@ -1,0 +1,74 @@
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+$custom-color: #3f3d48;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+$white: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+
+//background color
+$body-background: #f7f8fa;
+
+$bg-color: linear-gradient(to right, #ff6a00, #ee0979);
+$bg-color-head:  linear-gradient(to right, #ff6a00, #ee0979);
+$bg-but-nav: #3b5998;
+$bg-but-nav-active: #b71346;
+//div head space top
+$outer-padding: 30px 0px 0px;
+$div-padding: 10px 0px 30px;
+$bg-tag: #f3f5f9;
+
+$tag-but-color: #6f7d95;
+$font-family: Rajdhani;
+$bottom-space: 10px;	
+$head-padding: 8px;
+$outer-cont-color: #f7f7f7;
+//border-color
+$border-color: 1px solid #cccccc;
+// $link-head-color: #3b5998;
+$body-padding: 22px 15px;
+$head-font-size: 15px;
+$no-underline: none;
+
+//slug
+$comments-slug-headpad:20px 0px;
+$a: #3b5998;
+
+//font-color
+$font-color: #464646;
+$line-height: 1.3;

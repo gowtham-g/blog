@@ -1,0 +1,458 @@
+.profile-picture-user{
+	padding: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+	.user-section{
+		.user-picture-section{
+			height: auto;
+			.profile-picture-image{
+				height: 90px;
+				width: 90px;
+				margin: auto;
+				display: block;
+					img{
+						border-radius: 50%;
+					}
+				}
+			}
+		.profile-user-member{
+			    margin: auto;
+		}
+	}
+	.profile-comment{
+		p{
+			padding: 10px;
+			cursor: pointer;
+			&:hover{
+				background: #f6f6f6;
+			}
+		}
+	}
+	&.author-profile{
+		box-shadow: none;
+		.profile-picture-image{
+			border: none;
+		}
+	}
+}
+.profile-picture-section-dropdown{
+	top: 40%;
+	width: 20px;
+	right: -6px;
+	.nav-link{
+		border: 1px solid #4e4c4c;
+		border-radius: 50%;
+		height: 20px;
+		padding: 0px 5px;
+	}
+}
+.col-space-border{
+	border: 1px solid #eaeaea;
+	padding: 10px;
+}
+.col-bot-space{
+	margin-bottom: 30px;
+}
+//profile-user name
+
+.profile-user-member-name{
+	font-size: 23px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #3b5998;
+}
+.profile-user-member{
+	textarea{
+		resize: none;
+	}
+}
+.account-input{
+	height: 35px;
+	line-height: 19px;
+}
+
+// collections
+.profile-user-nav{
+	.slug-but-nav {
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+		a{
+			width: 14.28%;
+			float: left;
+			&:hover{
+				background: #f7f7f7;
+			}
+			.profile-user-number{
+			    font-size: 20px;
+	    		display: inline-block;
+	    		color: black;
+	    		min-height: 24px;
+	    	}
+			.profile-user-type{
+				font-size: 18px;
+				color: #474747;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+//collections-active
+.profile-user-nav{
+	.slug-but-nav a.active{
+		background: #f5f3f3;
+		color: $bg-but-nav-active;
+		border-bottom: none;
+		.author-like{
+			-webkit-text-stroke: 1px $bg-but-nav-active;
+		}
+		.profile-user-number{
+		    font-size: 20px;
+		    font-weight: bold;
+    		display: inline-block;
+    		color: $bg-but-nav-active;
+    		min-height: 32px;
+    	}
+    }
+}
+
+//middle bar
+.mid-bar{
+	border-bottom: 1px solid #eaeaea;
+	.profile-user-member-name{
+		@extend .profile-user-member-name;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	
+}
+
+//PROFILE-QUESTION-SECTION
+
+.profile-question-article-section{
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	.profile-question-article{
+		font-size: 17px;
+		line-height: $line-height;
+		a{
+			color: $bg-but-nav;
+			text-decoration: none;
+		}
+	}
+	.profile-question-article-time{
+		font-size: 15px;
+		padding-top: 5px;
+	}
+
+}
+.profile-question-col:nth-child(3n){
+	// padding-right: 0px;
+}
+
+.all-profile-user{
+	.image-carousel .inner{
+		display: inherit;
+	}
+}
+
+//likes
+#profile-likes{
+	.collection-username{
+		@include carousel-content();
+	}
+	.img-like{
+		height: 200px;
+		width: 100%;
+	}
+	.forum-img-profile-section{
+		.img-forum{
+			height: 200px;
+			position: relative;
+			img{
+				height: 100%;
+				width: 100%;
+			}
+			.profile-forum{
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				height: 50px;
+				width: 50px;
+			}
+		}
+	}
+	.tool-author{
+		background: transparent !important;
+		position: relative;
+		border: none;
+		color: #6f7d95;
+		padding: 0px 7px;
+	}
+	.date-name{
+		.author{
+			float: right;
+		}
+	}
+}
+//collection-section
+#profile-collections{
+	.col-bot-space{
+		padding: 5px;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+	}
+}
+.collection-profile-page{
+	.my-collection-count{
+		width: 100%;
+	    height: 210px;
+	    background: #f7f7f7;
+	    overflow: hidden;
+	    .collection-image{
+			.mycollectionImg1{
+				float: left;
+				margin-right: 2%;
+				display: inline-block;
+				width: 49%;
+				height: 100px;
+				margin-bottom: 5px;
+				-webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+				box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+				overflow: hidden;
+		    	.img-1{
+					max-width: none! important;
+		    	}
+	    	}
+			.mycollectionImg1:nth-of-type(2n){
+				margin-right: 0px;
+			}
+	    }
+	}
+	.collection-title{
+		padding: 10px 10px 0px;
+	}
+}
+.mycollectionImg2{
+	height: 200px;
+}
+.img-2{
+	width: 100%;
+	height: 100%;
+}
+.design-number{
+	font-size: 12px;
+}
+//followers
+.profile-followers-top{
+	height: 120px;
+	background: #0088cc;
+	.profile-followers-name{
+		padding-top: 17px;
+		text-align: center; 
+		overflow: hidden;
+		white-space: no-wrap;
+		color: white;
+	}
+}
+	.profile-followers-article{
+		margin-top: -50px;
+		.profile-followers-image{
+			text-align: center;
+			img{
+				border-radius: 50%;
+			    width: 100px ;
+			    height: 100px;
+			    max-width: 100%;
+			}
+		}
+		
+		.profile-followers-subarticle{
+			@include carousel-content();
+		}
+
+	}
+.profile-followers-bottom{
+	padding: 10px 0px;
+	margin: 10px 0px;
+	background: #0088cc;
+	.profile-followers-bottom-article{
+		display: flex;
+		.profile-followers-stats{
+			text-align: center;
+			width: 33.33%;
+			color: white;
+		}
+	}
+}
+.profile-user-member{
+	.form-control:disabled{
+		background-color: #eef3b5;
+	}
+}
+.profile-followers-btn{
+	margin: 10px 0px;
+	button{
+		background: transparent;
+		cursor: pointer;
+	}
+}
+
+//following
+.collection-image-following{
+	display: flex;
+	.img-others-profile{
+		width: 20%;
+		img{
+			max-width: 100%;
+			width: 50px;
+			height: 50px;
+			margin: 10px 0px;
+			border-radius: 50%;
+		}
+	}
+	.others-profile{
+		width: 40%;
+		font-size: 15px;
+		overflow: hidden;
+		padding: 10px 0px;
+		.others-name{
+			a{
+				color: black;
+			}
+		}
+	}
+	.unfollow-btn-sec{
+		width: 40%;
+		margin: auto;
+		.unfollow-btn{
+			height: 32px;
+			float: right;
+			padding: 2px 7px;
+			background: #d4d4d4;
+			border-radius: 0px;
+			border: none;
+		}
+	}
+}
+.profile-res{
+  display: inline-block;
+  float: left;
+	margin-bottom: 25px;
+	.card-space{
+		margin-right: 25px! important;
+	}
+}
+.profile-pad{
+	padding: 0px 0px 0px 15px;
+}
+.accountShow{
+	border-top: 2px solid $bg-but-nav;
+	left: -76px! important;
+}
+.follow-icon{
+	.profile-user-icon{
+		float: none;
+	}
+	.followers-count{
+		display: block;
+		line-height: 10px;
+	}
+}
+.user{
+	.image-carousel{
+		padding-top: 0px;
+	}
+}
+.image-editor .cropit-preview{
+	margin: auto;
+}
+.error-msg{
+	a{
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+.error-tut{
+	font-size: 23px;
+	color: #b71346;
+	line-height: 30px;
+}
+.profile-user-icon.points{
+	background: url("/assets/img/sprite_L.png") no-repeat -628px -148px;
+}
+#profile-questions .error-msg .error-img span{
+		background: url(/assets/img/error_sprite.png) no-repeat -800px -220px;
+}
+#profile-likes .error-msg .error-img span{
+		background: url(/assets/img/error_sprite.png) no-repeat -600px -220px;
+}
+#profile-collections .error-msg .error-img span{
+		background: url(/assets/img/error_sprite.png) no-repeat -800px -32px;
+}
+#profile-tags .error-msg .error-img span {
+		background: url(/assets/img/error_sprite.png) no-repeat -1180px -220px;
+}
+#profile-followers .error-msg .error-img span{
+		background: url(/assets/img/error_sprite.png) no-repeat -30px -220px;
+}
+#profile-following .error-msg .error-img span{
+		background: url(/assets/img/error_sprite.png) no-repeat -223px -220px;
+}
+#section-comments .error-msg .error-img span{
+	background: url(/assets/img/error_sprite.png) no-repeat -996px -32px;
+}
+#section-faq .error-msg .error-img span{
+	background: url(/assets/img/error_sprite.png) no-repeat -28px -32px;
+	width: 168px;
+	height: 160px;
+}
+#search-page .error-msg .error-img span{
+	background: url(/assets/img/error_sprite.png) no-repeat -430px -32px;
+}
+.feeds .error-msg .error-img span{
+	background: url(/assets/img/error_sprite.png) no-repeat -459px -382px;
+	width: 200px;
+	height: 160px;
+
+}
+@media only (min-width:767px) and (max-width:1330px)
+{
+	.collection-image-following .others-profile{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width:767px){
+	.profile-user-nav .slug-but-nav a{
+		width: 33.33%;
+		border-bottom: 1px solid #eee;
+	}
+	.profile-question-row{
+		.profile-question-col{
+			padding-right: 0px;
+		}
+	}
+}
+
+@media only (min-width:767px) and (max-width:910px)
+{
+	.collection-image-following .others-profile{
+		font-size: 13px;
+	}
+
+}
+
+@media only (min-width:575px) and (max-width:767px){
+	#profile-collections, #profile-followers, #profile-likes, #dashboard-feeds{
+		.profile-question-row {
+			.profile-question-col:nth-child(odd){
+				padding-right: 5px;
+				}
+			}
+		.profile-question-row {
+			.profile-question-col:nth-child(even){
+				padding-left: 5px;
+			}
+		}
+	}
+}

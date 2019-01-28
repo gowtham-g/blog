@@ -1,0 +1,194 @@
+.accounts-head{
+	font-size: 23px;
+    margin-bottom: 15px;
+    padding: 8px 0px;
+    font-weight: 500;
+}
+.cols_template {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.accounts-article{
+	padding: 20px 10px 10px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+}
+.account-subhead{
+	border-bottom: 1px solid #f6f6f6;
+	font-weight: bold;
+}
+.accounts-subarticle{
+	padding: 0px 10px;
+	.account-form{
+		padding-top: 10px;
+	}
+	.form-group{
+		display: flex;
+		margin-bottom: 1rem;
+		.form-control{
+			border: 1px solid #ddd;
+		    font-size: 14px;
+		    padding: 4px 5px;
+		}
+	}
+}
+.accounts-subarticle{
+	.image-editor .upld_img {
+		display: block;
+	}
+}
+.image-editor{
+	.upld_img {
+		display: none;
+		top: 34px;
+		left: 0;
+		right: 0;
+	}
+}
+.user-picture-section{
+	&:hover{
+		.upld_img{
+			display: block;
+		}
+	}
+}
+/*.col-pad{
+	padding: 0px;
+}*/
+.changepwd-pencil{
+	position: absolute;
+	top: 58px;
+	right: 14px;
+	font-size: 13px;
+	cursor: pointer;
+}
+.form-control:disabled {
+    background-color: #eee;
+}
+.profile-picture{
+	padding-top: 10px;
+	.profile-picture-section{
+		width: 150px;
+		min-height: 100px;
+		margin: auto;
+		display: flex;
+	    height: auto;
+	    border-radius: 50%;
+	    .profile-picture-section-image{
+	    	width: 150px;
+		    .profile-picture-image{
+		    	max-width: 100%;
+				border-radius: 50%;
+		    }
+		}
+	    .profile-picture-section-dropdown{
+		    .defaultProfilePic{
+		    	width: 50px;
+			    height: 50px;
+			    margin-bottom: 10px;
+			    background: #fff;
+			    border-radius: 50%;
+			    box-shadow: 0 1px 10px 0 rgba(0,0,0,.1);
+			    overflow: hidden;
+			}
+	    	.account-nav{
+				    padding: 2px 5px;
+	    	}
+		    .account-space{
+		    	    width: 184px;
+		    }
+		    .no-bor{
+		    	max-width: 100%;
+		    }
+	    	.dropdown-toggle::after{
+				font-size: 20px;
+				color: #2c323e;
+				vertical-align: middle;
+	    	}
+	    	.upld_img{
+	    		background: $bg-but-nav;
+	    	}
+	    }
+	}
+}
+.account-but{
+	background: $bg-but-nav;
+	padding: 3px 15px;
+	color: white;
+	margin-top: 10px;
+}
+.account-modal{
+	.form-group{
+		display: flex;
+		margin-bottom: 10px;
+		.dr{
+			text-align: right;
+		}
+	}
+		.form-control{
+			border: 1px solid #ddd;
+		    font-size: 14px;
+		    padding: 4px 5px;
+		}
+}
+.input-max{
+	width: 250px;
+}
+.profile-pencil-ico{
+	top: 23px;
+	right: 12px;
+}
+
+.account-input.input-max{
+	height: 35px;
+	padding: 5px 23px 5px 5px;
+}
+
+.add-left{
+	border: 1px solid #ccc;
+	height: 600px;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.profile-picture-section:hover{
+	.upld_img{
+		display: block;
+		top: 34px;
+	}
+}
+.no-notify {
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	font-size: 20px;
+	font-weight: bold;
+	left: 0;
+	right: 0;
+}
+.author-model{
+	max-width: 400px !important;
+}
+.user-note{
+	li{
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+}
+.checkbox_bg{
+	width: 20px;
+	height: 22px;
+	display: inline-block;
+}
+.checkbox_bg{
+	background: url("/assets/img/sprite_L.png") no-repeat -229px -147px;
+}
+.checkbox_bg.active{
+	background: url("/assets/img/sprite_L.png") no-repeat -266px -147px;
+}
+.pointer{
+  cursor: pointer;
+}

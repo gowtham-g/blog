@@ -1,0 +1,123 @@
+//description section
+.recent-box{
+	min-height: auto;
+	@include sidebar-text();
+	.recent-left{
+		.recent-img{
+		color: black;
+		}
+		.author{
+			white-space: nowrap;
+			font-size: 14px;
+			a:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.recent-article{
+		color: black;
+		@include carousel-content();
+	}
+	.questions-hover{
+		padding: 10px 0px;
+	}
+}
+//add on sidebar
+.add-block{
+	max-width: 100%;
+	border: 1px solid #f7f7f7;
+	margin-bottom: 10px;
+}
+.sidebar-forum{
+	padding: 0px 10px 10px;
+	text-align: center;
+}
+.recent-box a {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	word-wrap: break-word;
+}
+.recent-box a {
+	&.comments-link.btn-color{
+		width: fit-content;
+		text-align: center;
+		font-size: 15px;
+		margin: auto;
+		color: #fff;
+	}
+}
+.wrap{
+	top: 61px;
+	z-index: 998;
+	margin-top: 30px;
+}
+.side-ques{
+	font-weight: bold;
+	font-style: italic;
+	@include carousel-content();
+	height: auto;
+	font-size: 14px;
+	max-height: 48px;
+	line-height: 1.4;
+	&.side-ques-link{
+		font-style: normal;
+		max-height: 43px;
+		font-size: 18px;
+		height: auto;
+	}
+}
+.sidebar-img{
+	width: 60px;
+	height: 60px;
+}
+.sidebar{
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+	.tutorial-head{
+		font-size: 20px! important;
+		line-height: 23px;
+	}
+}
+.sidebar-img{
+	background: url("/assets/img/error_sprite.png") no-repeat -1375px -224px;
+}
+.slug-class .sidebar-forum{
+	pre{
+		background: #fff! important;
+	}
+}
+.create-side-head{
+	padding: 0px 0px 5px;
+	margin: 0 0 10px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.create-side-ico{
+	width: 28px;
+	height: 25px;
+}
+.create-ask-question{
+	background: url("/assets/img/sprite_L.png") no-repeat -206px -190px;
+}
+.post-answer{
+	background: url("/assets/img/sprite_L.png") no-repeat -161px -190px;
+}
+.earn-rewards{
+	background: url("/assets/img/sprite_L.png") no-repeat -244px -190px;
+}
+.create-down-arrow{
+	i{
+		font-size: 15px;
+	}
+}
+.create-side-subhead{
+	font-size: 16px;
+	font-weight: 600;
+	width: fit-content;
+	margin: auto;
+	color: $bg-but-nav;
+}
+.create-side{
+	p{
+		font-size: 14px;
+	}
+}
